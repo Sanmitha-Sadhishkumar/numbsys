@@ -11,7 +11,7 @@ setuptools.setup(
     description="This module gives functions that enable conversions between number systems to make python programming easier than before",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Sanmitha-Sadhishkumar/numsys/tree/master/numsys/numsys.py",
+    url="https://github.com/Sanmitha-Sadhishkumar/numbsys/tree/master/numbsys",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
