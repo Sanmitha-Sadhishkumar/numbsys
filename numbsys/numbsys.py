@@ -43,7 +43,7 @@ def isbinary(a):
     else:
         return False
 
-#isbinary() - used to check whether the given input is valid hexadecimal literal
+#ishexadecimal() - used to check whether the given input is valid hexadecimal literal
 #input - one
 #ouptut- True/False. True if is a hexadecimal literal. False otherwise
 def ishexadecimal(a):
@@ -60,7 +60,7 @@ def ishexadecimal(a):
     else:
         return False
 
-#isbinary() - used to check whether the given input is valid octal literal
+#isoctal() - used to check whether the given input is valid octal literal
 #input - one
 #ouptut- True/False. True if is a octal literal. False otherwise
 def isoctal(a):
