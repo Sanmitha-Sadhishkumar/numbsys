@@ -29,11 +29,8 @@ __all__=['dtob','btod','dtoo','otod','dtoh','htod','htoo','otoh','htob','btoh','
 #ouptut- True/False. True if is a binary literal. False otherwise
 def isbinary(a):
     if isinstance(a,int):
-        b,c='',0
-        while a:
-            r=a%10
-            b=b+chr(48+r)
-            a//=10
+        c=0
+        b=str(a)
         for i in b:
             if i=='0' or i=='1':
                 c+=1
@@ -44,7 +41,7 @@ def isbinary(a):
     else:
         raise TypeError("invalid inputs for type 'int'")
 
-#isbinary() - used to check whether the given input is valid hexadecimal literal
+#ishexadecimal() - used to check whether the given input is valid hexadecimal literal
 #input - one
 #ouptut- True/False. True if is a hexadecimal literal. False otherwise
 def ishexadecimal(a):
@@ -67,11 +64,7 @@ def ishexadecimal(a):
 def isoctal(a):
     if isinstance(a,int):
         b='01234567'
-        d,c='',0
-        while a:
-            r=a%10
-            d=d+chr(48+r)
-            a//=10
+        d,c=str(a),0
         for i in d:
             if i in b:
                 c+=1
@@ -399,4 +392,3 @@ def hexsub(a,b,sys='dec'):
     elif sys=='hex':
         h=dtoh(e)
         return h
-
